@@ -1,11 +1,5 @@
 #!/bin/bash
 
-# Basic
-sudo apt-get -y install git
-sudo apt-get -y install python3
-sudo apt-get -y install python3-pip
-
-sudo apt-get -y install vim
 
 # Life Project
 cd ~ 
@@ -42,4 +36,14 @@ mkvirtualenv django
 workon django
 cd ~/life
 pip3 install -r requirements.txt
+
+
+# Developer Configuration
+mkdir ~/devtools
+cd ~/devtools
+wget https://download.jetbrains.com/python/pycharm-professional-2017.3.tar.gz
+tar -xvzf pycharm-professional-2017.3.tar.gz
+
+echo '' >> ~/.bashrc
+echo "alias pycharm='./pycharm-2017.3/bin/pycharm.sh &'" >> ~/.bashrc
 
