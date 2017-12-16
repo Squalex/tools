@@ -46,4 +46,5 @@ tar -xvzf pycharm-professional-2017.3.tar.gz
 
 echo '' >> ~/.bashrc
 echo "alias pycharm='./pycharm-2017.3/bin/pycharm.sh &'" >> ~/.bashrc
+echo "alias djenv='workon django'" >> ~/.bashrc
 

@@ -2,11 +2,11 @@
 
 
 PS3='Please enter your choice: '
-options=("First choice" "Quit")
+options=("Git Python3 Python3-pip Vim installation" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
-        "First choice")
+        "Git Python3 Python3-pip Vim installation")
             echo "Installing Git ..."
 			sudo apt-get -y install git > /dev/null
             echo "Installing python3"
